@@ -10,6 +10,7 @@
       <a href="#Business-Outstanding">Interesting Points</a>
       <a href="#Business-Book">Highlights</a>
       <a href="#Business-contact">Contact</a>
+      <a href="#Business-form">Orders</a>
       <a href="personal.html">Sahatsawat</a>
     </nav>
   </head>
@@ -38,25 +39,145 @@
         publishing known for balancing heritage with innovation.
       </p>
     </div>
-    <div id = "Business-Outstanding">
-        <h2>Business Outstanding points</h2>
-        <ul type = "square">
-            <li>Strong blend of traditional Chinese craftsmanship and modern printing technology</li>
-            <li>Consistent focus on high-quality Chinese-language publications</li>
-            <li>Ability to adapt to market changes, from manual to digital printing</li>
-            <li>Reputation for reliability and cultural authenticity</li>
-            <li>Experience in both educational and literary publishing</li>
-            <li>Commitment to preserving Chinese literary heritage</li>
-        </ul>    
+    <div id="Business-Outstanding">
+      <h2>Business Outstanding points</h2>
+      <ul type="square">
+        <li>
+          Strong blend of traditional Chinese craftsmanship and modern printing
+          technology
+        </li>
+        <li>Consistent focus on high-quality Chinese-language publications</li>
+        <li>
+          Ability to adapt to market changes, from manual to digital printing
+        </li>
+        <li>Reputation for reliability and cultural authenticity</li>
+        <li>Experience in both educational and literary publishing</li>
+        <li>Commitment to preserving Chinese literary heritage</li>
+      </ul>
     </div>
-    <div id = "Business-Book">
-        <h2>Book Highlights</h2>
-        <ol type="I" >
-            <li>Romance of the Three Kingdoms by Luo Guanzhong</li>
-            <li>Water Margin by Shi Nai-an</li>
-            <li>Journey to the West by Wu Cheng-en</li>
-            <li>Dream of the Red Chamber by Cao Xueqin</li>
-        </ol>
+    <div id="Business-Book">
+      <h2>Book Highlights</h2>
+      <ol type="I">
+        <li>Romance of the Three Kingdoms by Luo Guanzhong</li>
+        <li>Water Margin by Shi Nai-an</li>
+        <li>Journey to the West by Wu Cheng-en</li>
+        <li>Dream of the Red Chamber by Cao Xueqin</li>
+      </ol>
+    </div>
+    <div id="Business-form">
+      <h2>Bookstore Order Form</h2>
+
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Your Full Name"
+        />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Your Email"
+        />
+        <br />
+        <br />
+        <label for="book">Select Book:</label>
+        <select id="book" name="book" required>
+          <option value="" disabled selected>
+            Select one of The Four Great Classic Chinese Novels
+          </option>
+          <option value="Romance of the Three Kingdoms">
+            Romance of the Three Kingdoms
+          </option>
+          <option value="Water Margin">Water Margin</option>
+          <option value="Journey to the West">Journey to the West</option>
+          <option value="Dream of the Red Chamber">
+            Dream of the Red Chamber
+          </option>
+        </select>
+        <br />
+        <br />
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" />
+        <br />
+        <br />
+        <label for="address">Shipping Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          placeholder="Your Address with zip code"
+          required
+        ></textarea>
+        <br />
+        <br />
+        <p>Shipping Type:</p>
+        <label>
+          <input type="radio" name="shipping-type" value="domestic" checked />
+          Domestic
+        </label>
+        <label>
+          <input type="radio" name="shipping-type" value="international" />
+          International
+        </label>
+        <br />
+        <br />
+        <p>Shipping Method:</p>
+
+        <label for="standard">
+          <input
+            type="radio"
+            id="standard"
+            name="shipping-method"
+            value="standard"
+            checked
+          />
+          Standard Shipping (3–5 days)
+        </label>
+        <br />
+
+        <label for="express">
+          <input
+            type="radio"
+            id="express"
+            name="shipping-method"
+            value="express"
+          />
+          Express Shipping (1–2 days)
+        </label>
+
+        <br />
+        <br />
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="^\+?[0-9]{9,15}$"
+          required
+          placeholder="Phone Number with country code"
+        />
+        <br />
+        <br />
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+          <option value="cod">Cash on Delivery</option>
+          <option value="card">Credit/Debit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+        <br />
+        <br />
+      </form>
     </div>
     <div id="Business-contact">
       <iframe
