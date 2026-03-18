@@ -119,41 +119,38 @@
         ></textarea>
         <br />
         <br />
-        <p>Shipping Type:</p>
-        <label>
-          <input type="radio" name="shipping-type" value="domestic" checked />
-          Domestic
-        </label>
-        <label>
-          <input type="radio" name="shipping-type" value="international" />
-          International
-        </label>
-        <br />
-        <br />
-        <p>Shipping Method:</p>
+        <fieldset>
+          <legend>Shipping Type</legend>
 
-        <label for="standard">
-          <input
-            type="radio"
-            id="standard"
-            name="shipping-method"
-            value="standard"
-            checked
-          />
-          Standard Shipping (3–5 days)
-        </label>
+          <label>
+            <input type="radio" name="shipping-type" value="domestic" checked />
+            Domestic
+          </label>
+
+          <label>
+            <input type="radio" name="shipping-type" value="international" />
+            International
+          </label>
+        </fieldset>
         <br />
+        <fieldset>
+          <legend>Shipping Method</legend>
 
-        <label for="express">
-          <input
-            type="radio"
-            id="express"
-            name="shipping-method"
-            value="express"
-          />
-          Express Shipping (1–2 days)
-        </label>
+          <label>
+            <input
+              type="radio"
+              name="shipping-method"
+              value="standard"
+              checked
+            />
+            Standard Shipping (3–5 days)
+          </label>
 
+          <label>
+            <input type="radio" name="shipping-method" value="express" />
+            Express Shipping (1–2 days)
+          </label>
+        </fieldset>
         <br />
         <br />
         <label for="phone">Phone Number:</label>
